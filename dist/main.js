@@ -13,12 +13,12 @@ const onsubmit = (e) => {
     return fetch(`${url.toString()}?rt=${rt}`)
         .then((res) => {
             if (res.status === 200) {
-                const text = 'A human, success! '
-                const resText = await res.text()
-                if (resText === '') {
-                    return text + '(No secret message set.)'
-                }
-                return text + resText
+                return res.text().then((text) => {
+                    if (text === '') {
+                        text = '(No secret message set.)'
+                    }
+                    return 'A human, success! ' + text
+                })
             } 
             return 'Beep bop beep poop ("You failed the captcha")'
         }).then((text) => {
