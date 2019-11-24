@@ -23,4 +23,4 @@ Netlify Function written in Javascript, without dependencies.
  
  
 For verification flow: https://developers.google.com/recaptcha/docs/verify  
-More Netlify Function examples: https://github.com/netlify/function
+More Netlify Function examples: https://github.com/netlify/functions
