@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#ffffff">
+  <title>My site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:500&amp;display=swap">
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+
+<body>
+  <h1>Integrating Netlify Functions and reCAPTCHA v2</h1>
+
+  <p>Go on, prove you're not a robot:</p>
+  <!-- Element provided by Google -->
+  <form id='form' action="?" method="POST">
+    <div class="g-recaptcha" data-sitekey="6LdrjcMUAAAAABB6vBFtBfSrHq98dpKi-f70MEMx"></div>
+    <br />
+    <input type="submit" value="Submit">
+  </form>
+  <p> 
+    Response: <span id='secret-message'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </p>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
