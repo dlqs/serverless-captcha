@@ -5,6 +5,8 @@ This is a sample static site hosted on Netlify with Google's reCAPTCHA v2, using
 
 Want a reCAPTCHA for your static site without dedicating an entire back-end? This is it.
 
+Netlify Function written in Javascript, without dependencies.
+
 ## Use cases:
  - Hide email, phone numbers from scrapers
  - Hide download links
