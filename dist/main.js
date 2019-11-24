@@ -14,10 +14,11 @@ const onsubmit = (e) => {
         .then((res) => {
             if (res.status === 200) {
                 const text = 'A human, success! '
-                if (res.text() === '') {
+                const resText = await res.text()
+                if (resText === '') {
                     return text + '(No secret message set.)'
                 }
-                return text + res.text()
+                return text + resText
             } 
             return 'Beep bop beep poop ("You failed the captcha")'
         }).then((text) => {
