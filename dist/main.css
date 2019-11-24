@@ -17,3 +17,21 @@ body {
     background:#d3d3d3;
     border-radius:4px
 }
+
+input {
+    color: white;
+    box-sizing: border-box;
+    height: 40px;
+    width: 100px;
+    padding: 10px 12px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #474786;
+    box-shadow: 0 1px 3px 0 #e6ebf1;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+}
+
+input:hover {
+    box-shadow: 0 2px 4px 0 rgb(170, 170, 170);
+}
