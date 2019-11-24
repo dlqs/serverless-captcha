@@ -2,6 +2,7 @@
 
 This is a sample static site hosted on Netlify with Google's reCAPTCHA v2, using Netlify Functions.  
 [Try it here!](https://serverless-captcha.netlify.com/)  
+
 Want a reCAPTCHA for your static site without dedicating an entire back-end? This is it.
 
 Netlify Function written in Javascript, without dependencies.
