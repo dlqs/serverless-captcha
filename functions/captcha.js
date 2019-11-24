@@ -46,7 +46,7 @@ function httpRequest(params, postData) {
  * i.e. https://www. .... .com?rt=aaa123456789
  */
 exports.handler = async (event, context) => {
-    if (event.httpMethod !== "GET") {
+    if (event.httpMethod !== 'GET') {
         return { 
             statusCode: 405 
         }
@@ -64,9 +64,9 @@ exports.handler = async (event, context) => {
         }
     }
     const params = {
-        host: "google.com",
+        host: 'google.com',
         path: `/recaptcha/api/siteverify?secret=${process.env[CAPTCHA_SECRET]}&response=${event.queryStringParameters.rt}`,
-        method: "POST"
+        method: 'POST'
     }
     return httpRequest(params).then((body) => {
         return body
@@ -74,7 +74,7 @@ exports.handler = async (event, context) => {
         if ('success' in json && json.success === true) {
             return {
                 statusCode: 200,
-                body: process.env[SECRET_MESSAGE] || ""
+                body: process.env[SECRET_MESSAGE] || ''
             }
         }
         console.log('Captcha verification returned false.')

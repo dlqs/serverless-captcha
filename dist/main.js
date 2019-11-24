@@ -1,6 +1,6 @@
-const captcha = "/.netlify/functions/captcha"
+const captcha = '/.netlify/functions/captcha'
 
-const base = new URL("https://nifty-tesla-2a3aa5.netlify.com")
+const base = new URL('https://nifty-tesla-2a3aa5.netlify.com')
 const url = new URL(captcha, base)
 
 const onsubmit = (e) => {
